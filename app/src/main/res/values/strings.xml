@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Hummingbird\'s Mdb</string>
+    
+    <string name="list_to_overview_fragment">list_to_overview</string>
+
+
+    <string name="erro_lista_retorno_lista">Erro ao retornar lista!</string>
+    <string name="erro_overview_sem_sinopse">Este filme ainda não possui uma sinopse!</string>
+    <string name="erro_overview_carregar_filme">Erro ao carregar dados do filme!</string>
+    
+    <string name="texto_overview">"Duração: %1$s \n\n Sinopse: %2$s"</string>
+    <string name="titulo_no_overview">"%1$s - %2$s"</string>
+
+    <string name="descricao_lista">Uma seleção de filmes inperdíveis:</string>
+
+    <string name="app_label">HummingBird\'s Mdb</string>
+    <string name="search_hint">Busca por filmes</string>
+
+    <string name="busca">Busca</string>
+</resources>

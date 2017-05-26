@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fontList">15sp</dimen>
+    <dimen name="fontOverviewTitle">20sp</dimen>
+    <dimen name="fontOverviewBody">15sp</dimen>
+
+    <dimen name="listPadding">5dp</dimen>
+    <dimen name="recyclerViewPadding">10dp</dimen>
+
+    <dimen name="cardViewWidth">160dp</dimen>
+    <dimen name="cardViewMargin">5dp</dimen>
+    <dimen name="cardViewCorner">2dp</dimen>
+    <dimen name="imageCoverHeight">200dp</dimen>
+
+    <dimen name="overviewPadding">10dp</dimen>
+    <dimen name="overviewTitleAreaHeight">180dp</dimen>
+</resources>

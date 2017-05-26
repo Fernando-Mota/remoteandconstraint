@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/cardViewMargin"
+        card_view:cardCornerRadius="@dimen/cardViewCorner">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/movie_list_poster"
+                android:layout_width="146dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintVertical_bias="1.0"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <TextView
+                android:id="@+id/movie_list_title"
+                style="@style/ListFont"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="top|left"
+                android:maxLength="25"
+                android:text="Titulo do capeta selvagem"
+                android:textSize="15sp"
+                card_view:layout_constraintHorizontal_bias="0.444"
+                card_view:layout_constraintLeft_toRightOf="@+id/movie_list_poster"
+                card_view:layout_constraintRight_toLeftOf="@+id/movie_list_rating"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/movie_list_rating"
+                android:layout_width="22dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="7.6"
+                android:textSize="15sp"
+                card_view:layout_constraintRight_toLeftOf="@+id/imageView2"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/icon_star"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/icon_year"
+                card_view:layout_constraintLeft_toRightOf="@+id/movie_list_poster"
+                card_view:layout_constraintTop_toBottomOf="@+id/movie_list_title" />
+
+            <TextView
+                android:id="@+id/movie_list_release_year"
+                android:layout_width="40dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="2017"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                card_view:layout_constraintLeft_toRightOf="@+id/imageView"
+                card_view:layout_constraintTop_toBottomOf="@+id/movie_list_title" />
+
+            <TextView
+                android:id="@+id/movie_list_generos"
+                android:layout_width="0dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center|right"
+                android:maxLength="25"
+                android:text="TExto, dos, generos, do, cap"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintLeft_toRightOf="@+id/movie_list_release_year"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/movie_list_title" />
+
+            <TextView
+                android:id="@+id/movie_list_overview"
+                android:layout_width="0dp"
+                android:layout_height="79dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="7"
+                android:text="TExto do capet do satanas do demonio cabeludo satanas capeta pulta queo pariu e os caraio e as porra do demonio e os demonio demoniaco do satanas e os capeta"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintLeft_toRightOf="@+id/movie_list_poster"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/movie_list_generos" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/black"
+                card_view:layout_constraintBottom_toTopOf="@+id/movie_list_mais_informacoes"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintLeft_toRightOf="@+id/movie_list_poster"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/movie_list_overview"
+                card_view:layout_constraintVertical_bias="0.666" />
+
+            <TextView
+                android:id="@+id/movie_list_mais_informacoes"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="Read more"
+                android:textStyle="bold"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintLeft_toRightOf="@+id/movie_list_poster"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/movie_list_overview"
+                card_view:layout_constraintVertical_bias="0.0" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
